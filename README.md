@@ -1,6 +1,7 @@
 # PROJET-2 : Pipeline evenementiel S3 -> Lambda -> DynamoDB -> SNS
 
 **Groupe :** GROUP-22035-22067-22087
+
 **Cours :** Architecture Cloud Avancee (IaaS, PaaS) 2026
 
 ## Informations de deploiement
