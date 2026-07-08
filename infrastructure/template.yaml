@@ -23,7 +23,8 @@ Resources:
       Tags:
         - Key: supnum:Lab
           Value: PROJET-2
-
+        - Key: supnum:Group
+          Value: GROUP-22035-22067-22087
 
   Table:
     Type: AWS::DynamoDB::Table
@@ -39,7 +40,8 @@ Resources:
       Tags:
         - Key: supnum:Lab
           Value: PROJET-2
-
+        - Key: supnum:Group
+          Value: GROUP-22035-22067-22087
 
   Topic:
     Type: AWS::SNS::Topic
@@ -48,7 +50,8 @@ Resources:
       Tags:
         - Key: supnum:Lab
           Value: PROJET-2
-
+        - Key: supnum:Group
+          Value: GROUP-22035-22067-22087
 
   Abonnement:
     Type: AWS::SNS::Subscription
@@ -90,7 +93,8 @@ Resources:
       Tags:
         - Key: supnum:Lab
           Value: PROJET-2
-
+        - Key: supnum:Group
+          Value: GROUP-22035-22067-22087
 
   Lambda:
     Type: AWS::Lambda::Function
@@ -150,6 +154,8 @@ Resources:
       Tags:
         - Key: supnum:Lab
           Value: PROJET-2
+        - Key: supnum:Group
+          Value: GROUP-22035-22067-22087
 
   PermissionS3:
     Type: AWS::Lambda::Permission
