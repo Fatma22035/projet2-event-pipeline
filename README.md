@@ -106,8 +106,7 @@ Toutes les ressources sont taguees avec :
         ├── cloudwatch-logs.png
         ├── dynamodb-item.png
         ├── sns-email.png
-        └── erreur-tag-policy-1.png (et suivants)
-```
+]```
 
 ## Deploiement
 
