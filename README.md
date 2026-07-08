@@ -4,6 +4,14 @@
 **Cours :** Architecture Cloud Avancee (IaaS, PaaS) 2026
 **Date limite :** 07 juillet 2026
 
+## Informations de deploiement
+
+| | |
+|---|---|
+| **Compte AWS** | 006217752908 |
+| **Region** | eu-west-3 (Paris) |
+| **Stack CloudFormation** | `Projet2-Groupe` |
+
 ## Description
 
 Pipeline de traitement de donnees sans serveur : le depot d'un fichier dans un
@@ -70,15 +78,17 @@ d'invoquer la fonction.
 
 ## Tags
 
-Toutes les ressources sont taguees avec `supnum:Lab = PROJET-2`.
+Toutes les ressources sont taguees avec :
+- `supnum:Lab = PROJET-2`
+- `supnum:Group = GROUP-22035-22067-22087`
 
-> **Note :** le tag `supnum:Group = GROUP-22035-22067-22087` n'a pas pu etre
-> applique. Une Tag Policy AWS Organizations active sur le compte rejette
-> systematiquement toute valeur testee pour la cle `supnum:Group` (testé avec
-> la valeur de l'enonce, une variante sans prefixe, et une valeur arbitraire —
-> voir captures d'ecran `docs/screenshots/erreur-tag-policy-*.png`). Le
-> probleme a ete signale au professeur ; il s'agit d'une contrainte du compte
-> AWS partage, independante du template CloudFormation.
+> **Historique :** le tag `supnum:Group` a initialement ete rejete au
+> deploiement (`TagPolicyException`) par une Tag Policy AWS Organizations
+> active sur le compte. Le probleme a ete diagnostique methodiquement
+> (plusieurs valeurs testees, sur plusieurs types de ressources) puis signale
+> au professeur, qui a corrige la policy cote compte. Le tag est desormais
+> applique avec succes sur toutes les ressources. Voir
+> `docs/screenshots/erreur-tag-policy-*.png` pour le detail du diagnostic.
 
 ## Structure du depot
 
@@ -124,9 +134,3 @@ aws cloudformation deploy \
 ```bash
 aws cloudformation delete-stack --stack-name Projet2-Groupe
 ```
-
-## Declaration sur l'utilisation de l'IA
-
-*(a completer par l'equipe selon les modalites confirmees avec le professeur
-concernant l'usage tolere d'outils IA pour la comprehension/le debogage vs. la
-generation directe du code final)*
