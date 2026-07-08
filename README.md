@@ -2,7 +2,6 @@
 
 **Groupe :** GROUP-22035-22067-22087
 **Cours :** Architecture Cloud Avancee (IaaS, PaaS) 2026
-**Date limite :** 07 juillet 2026
 
 ## Informations de deploiement
 
