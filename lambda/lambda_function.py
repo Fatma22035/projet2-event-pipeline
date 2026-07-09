@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 dynamodb = boto3.resource('dynamodb')
 sns = boto3.client('sns')
 
-TABLE_NAME = os.environ.get('TABLE_NAME', 'Table-22067-22035-22087')
+TABLE_NAME = os.environ.get('TABLE_NAME', 'table-projet2')
 TOPIC_ARN = os.environ.get('TOPIC_ARN')
 
 def lambda_handler(event, context):
